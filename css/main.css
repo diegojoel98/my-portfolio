@@ -1,0 +1,571 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;    
+    font-family: 'Roboto', sans-serif;    
+}
+*{
+    box-sizing: border-box;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ==========================================================================
+    Diego's custom styles
+   ========================================================================== */
+.header-container{ /* Header */
+    background-color: #81C784;
+    position: relative;
+    top: 0em;
+    width: 98.6vw;
+    height: 300px;
+}
+img.profile{
+    float: center;
+    border-radius: 6px;
+}
+.desc, .my{           /* Header elements */
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.desc{
+    top: 65%;
+}
+.btn{
+    background-color: #388E3C;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;    
+    border-radius: .25rem;    
+    border-bottom: 4px solid #2E7D32;
+}
+.btn:hover{
+    background-color: #2E7D32;
+}
+.content-edu{
+    margin-top: 0.5em;
+    background: #4AC29A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BDFFF3, #4AC29A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#education, #repositories, #about{  /* Titles elements */
+    text-align: center;
+    margin-top: 2em; 
+    font-family: Verdana, Arial, Helvetica, sans-serif;   
+}
+.card{                              /* Card elements */
+    background-color: #f4fcf2;
+    display: inline-block;
+	border-radius: 3px;
+	width: 32.9%;
+    height: 210px;    
+	box-shadow: 0px 2px 5px rgb(0,0,0,0.16), 0px 2px 5px rgb(0,0,0,0.16);
+}
+.acad{                  /* First card */
+    margin-left: 2.3px;
+}
+.card-title{
+    color: #000;
+    font-size: large;
+    font-weight: 600;    
+    text-align: center;
+}
+.my-desc{
+    padding-left: 25px;
+    font-size: 1.15em;
+    margin-bottom: 1.7em;
+}
+.btn-center{
+    margin: auto;
+    width: 15%;
+}
+.card:hover{
+    transform:scale(1.05);
+    transition: all 0.3s ease-in;
+}
+.repo{
+    margin: auto;
+    width: 33%; 
+/*   background-image: url("/img/profile.png");
+    background-repeat: no-repeat;
+    background-position: right;*/
+}
+.repo:hover{
+    transform:scale(1);
+}
+.fa-github{
+    font-size: 70px;
+    position: absolute;
+    top: -30px;
+    right: -50%;
+}
+.hidd{
+    visibility: hidden;
+}
+.btn-center2{
+    width: 45%;
+    margin-top: 55px;
+    margin-left: 25px;
+    position: relative;
+}
+.content-about{
+    background-color: #1B5E20;
+}
+.description-about{
+    color: #ffffff;
+    font-size: 1.15em;
+    text-align: center;
+    font-style: italic;
+}
+#about{
+    background-color: #ffffff;
+    margin-top: -25px;
+    padding-bottom: 10px;
+}
+.fa-envelope{
+    font-size: 48px;
+    color:#fff;
+    /*margin-left: 25%;*/
+}
+.linkedin{
+    font-size: 50px;
+    color: #fff;
+}
+.links{
+    color: #ffffff;
+    vertical-align: 50%;
+    text-decoration: none;
+}
+.links:hover{
+    color: #ccc;
+}
+.space{
+    display: inline-block;
+    background-color: brown;
+    width: 300px;
+    visibility: hidden;
+}
+.linkedin-img{
+    /*margin-left: 300px;*/
+    margin-bottom: 15px;
+}
+.item-title{    /* Education page */
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 30px;
+}
+.right{
+    display: inline;
+    margin-left: 93%;
+}
+h1{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.academ{
+    height: 220px;
+}
+.univ, .univ2{
+    width: 50%;
+    height: 180px;
+    margin-top: 15px;
+    background-color: #C8E6C9;
+    margin-bottom: 100px;
+    margin-left: 15px;
+}
+.univ2{
+    margin-bottom: 10px;
+    height: 150px;
+}
+.univ:hover{
+    transform:scale(1.005);
+}
+.univ2:hover{
+    transform: scale(1);
+}
+.finished{    
+    color: #388E3C;
+    margin-left: 5%;
+    text-decoration: none;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;    
+    border-radius: .25rem;    
+    border-bottom: 4px solid #2E7D32;
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+    Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 480px) {
+    /*.card{
+        display: block;
+        width: 50%;
+        height: 210px;
+        margin: auto;        
+    }*/
+    ul li {
+        display: block;
+        padding: 15px;
+    }
+    #education{
+        margin-top: 200px;
+    }
+    .desc{
+        position: absolute;
+        width: 100%;
+        text-align: left;
+    }
+    .card{
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+    .btn-center2{
+        width: 75%;
+        height: 45%;
+        margin-top: 55px;               
+    }
+    .hidd{
+        display: none;
+    }
+    .repo{
+        margin: auto;
+        width: 50%;
+        background-image: url("") ;        
+    }
+    .fa-github{
+        display: none;
+    }
+    .profile{
+        width: 120px;
+    }
+    .space{        
+        visibility: hidden;
+        /*margin-left: 30%;*/
+        width: 30%;
+    }
+    /*.fa-envelope{
+        margin-left: 30%;        
+    }
+    .linkedin-img{
+        margin-left: 30%;        
+    }*/
+    #about{
+        margin-top: 35px;
+    }
+    /* Second page */
+    .right{
+        display: inline;
+        margin-left: 5%;
+    }
+    .fa-graduation-cap{
+        margin-top: -15px;
+    }
+    
+}
+
+@media only screen and (min-width:481px) and (max-width: 768px) {
+    .card{
+        display: block;
+        width: 50%;
+        height: 210px;
+        margin: auto;        
+    }    
+    .hidd{
+        display: none;
+    }
+    .repo{
+        margin: auto;
+        width: 50%;         
+    }
+    .btn-center2{
+        margin: auto;
+        width: 80%;
+        height: 50%;
+        margin-top: 55px;
+        margin-left: 28%;
+    }
+    .repo{
+        margin: auto;
+        width: 50%;
+        background-image: url("") ;        
+    }
+    .fa-github{
+        display: none;
+    }
+    .profile{
+        width: 115px;
+    }
+    .space{
+        visibility: hidden;
+        width: 13%;
+    }
+    /*.fa-envelope{
+        margin-left: 10%;
+    }
+    .linkedin-img{
+        margin-left: 17.5%;
+    }*/
+    #about{
+        margin-top: 35px;
+    }
+    /* Second page */
+    .right{
+        display: inline;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1083px){
+    .card{
+        display: inline-block;
+        width: 48%;
+        margin-left: 8px;
+        margin-bottom: 4px;
+    }    
+    .hidd{
+        display: none;
+    }
+    .repo{
+        margin-left: auto;
+        margin-right: auto;
+        width: 98%; 
+        height: 150px;        
+    }
+    .fa-github{
+    font-size: 70px;
+    position: absolute;
+    top: -50px;
+    right: 50%;
+    }
+    #about{
+        margin-top: 15px;
+    }
+    .btn-center2{
+        width: 80%;
+        height: 50%;
+        margin-top: 55px;
+        margin-left: auto;
+        margin-right: auto;        
+    }
+    .fa-envelope{
+        margin-left: -10%;
+        display: inline-block;
+    }
+    .linkedin-img{
+        margin-left: -15%;
+        display: inline-block;
+    }
+    /* Second page */
+    .right{
+        display: inline;
+        margin-left: 90%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+/* ===============
+    Maximal Width
+   =============== */
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }    
+}
+
+/* ==========================================================================
+    Helper classes
+   ========================================================================== */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+    Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
